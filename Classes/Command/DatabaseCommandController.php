@@ -41,7 +41,6 @@ class DatabaseCommandController extends \Neos\Flow\Cli\CommandController
             if (!file_exists($maxMindDirectory)) {
                 mkdir($maxMindDirectory);
             }
-            var_dump($request->getHeaders());
             file_put_contents($maxMindDirectory . 'MaxMindGeoIp.tar.gz', $request->getBody());
 
             $phar = new PharData($maxMindDirectory . 'MaxMindGeoIp.tar.gz');
