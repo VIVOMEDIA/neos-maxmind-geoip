@@ -9,9 +9,15 @@ use GeoIp2\ProviderInterface;
 
 class LazyReader implements ProviderInterface
 {
-    protected string $databasePath;
+    /**
+     * @var string
+     */
+    protected $databasePath;
 
-    protected ?ProviderInterface $provider = null;
+    /**
+     * @var ProviderInterface|null
+     */
+    protected $provider = null;
 
     public function __construct($databasePath)
     {
