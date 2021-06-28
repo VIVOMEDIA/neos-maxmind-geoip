@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VIVOMEDIA\\MaxMind\\GeoIp": "Classes"
+            "VIVOMEDIA\\MaxMind\\GeoIp\\": "Classes"
         }
     },
     "extra": {
